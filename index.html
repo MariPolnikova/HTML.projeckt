@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой сайт</title>
+  <style>
+    body 
+      display: flex;
+      flex-direction: column;{
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+    }
+    /* Шапка */
+    header {
+      background-color: #002244;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header nav {
+      display: flex;
+      gap: 15px;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    header nav a:hover {
+      color: #66ccff;
+    }
+    /* Основной контент */
+    .content-wrapper {
+      display: flex;
+      width: 100%;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+      flex-grow: 1;
+    }
+    main h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    main p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    /* Блоки с картинками */
+    .image-blocks {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+    .image-blocks .block {
+      width: 30%;
+      background-color: white;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-blocks img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    /* Меню фильтра */
+    .filter-menu {
+      width: 200px;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Мой сайт</div>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </header>
+  <div class="content-wrapper">
+    <main>
+      <h1>Добро пожаловать на мой сайт</h1>
+      <p>Сайт аниме</p>
+      <div class="image-blocks">
+        <div class="block">
+          <img src="https://via.placeholder.com/150" alt="Изображение 1">
+          <p>Человек бензопила</p>
+        </div>
+        <div class="block">
+          <img src="https://via.placeholder.com/150" alt="Изображение 2">
+          <p>Блок - название 2</p>
+        </div>
+        <div class="block">
+          <img src="https://via.placeholder.com/150" alt="Изображение 3">
+          <p>Блок - название 3</p>
+        </div>
+      </div>
+    </main>
+    <aside class="filter-menu"></aside>
+  </div>
+</body>
+</html>
