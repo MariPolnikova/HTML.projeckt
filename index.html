@@ -87,6 +87,24 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-left: 20px;
     }
+    .filter-menu h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    .filter-menu label {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .filter-menu select {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
   </style>
 </head>
 <body>
@@ -104,7 +122,7 @@
       <p>Сайт аниме</p>
       <div class="image-blocks">
         <div class="block">
-          <img src="https://cdn.kobo.com/book-images/f9e6e611-ebd8-4473-8116-d642e619a1cb/353/569/90/False/chainsaw-man-vol-12.jpg" alt="Изображение 1">
+          <img src="https://via.placeholder.com/150" alt="Изображение 1">
           <p>Человек бензопила</p>
         </div>
         <div class="block">
@@ -117,7 +135,35 @@
         </div>
       </div>
     </main>
-    <aside class="filter-menu"></aside>
+    <aside class="filter-menu">
+        <h3>Фильтры</h3>
+        <form>
+          <label for="genre">Жанр</label>
+          <select id="genre" name="genre">
+            <option>Все</option>
+          </select>
+          <br><br>
+          <label for="type">Тип</label>
+          <select id="type" name="type">
+            <option>Все</option>
+          </select>
+          <br><br>
+          <label for="voice">Озвучка</label>
+          <select id="voice" name="voice">
+            <option>Все</option>
+          </select>
+          <br><br>
+          <label for="status">Статус</label>
+          <select id="status" name="status">
+            <option>Все</option>
+          </select>
+          <br><br>
+          <label for="age">Возрастное ограничение</label>
+          <select id="age" name="age">
+            <option>Все</option>
+          </select>
+        </form>
+      </aside>
   </div>
 </body>
 </html>
