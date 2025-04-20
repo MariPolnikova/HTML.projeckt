@@ -22,7 +22,7 @@ body {
 
   nav {
     display: flex;
-    gap: 15px;
+    gap: 30px;
   }
 
   nav a {
@@ -85,8 +85,8 @@ body {
   
   .image-blocks .block {
     width: 30%;
-    background-color: white;
-    padding: 15px;
+    background-color: #f4f4f4;
+    padding: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -100,13 +100,53 @@ body {
     object-fit: contain;
     margin-bottom: 10px;
   }
+
+  .anime-list {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px;
+    padding: 0;
+    text-align: center;
+  }
+  .anime-list h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 36px;
+
+  }
+
+  .anime-post {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .anime-post img {
+    width: 150px;
+    height: 270px;
+    object-fit: contain;
+  }
   
+  .anime-info {
+    text-align: left;
+    margin: 0 30px 0 30px;
+  }
+  
+  .anime-info h3 {
+    font-size: 30px;
+  }
+
+  .anime-info p {
+    font-size: 17px;
+    margin: 0;
+    max-width: 500px;
+  }
+
   .filter-menu {
     width: 250px;
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
+    margin-right: 20px;
     font-size: 16px;
   }
   
