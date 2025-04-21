@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Мой сайт</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">AniView</div>
-    <nav>
-      <a href="#">Главная</a>
-      <a href="#">О нас</a>
-      <a href="#">Контакты</a>
-    </nav>
-    <div class="auth-buttons">
-      <button onclick="openModal()">Логин</button>
-      <button onclick="openModal()">Регистрация</button>
+  <div class="container">
+    <header>
+      <div class="logo">AniView</div>
+      <nav>
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <div class="auth-buttons">
+        <button onclick="openModal()">Логин</button>
+        <button onclick="openModal()">Регистрация</button>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+      <main>
+        <h1>Погрузись в мир аниме</h1>
+        <p>Смотри любимые сериалы и находи новые шедевры каждый день!</p>
+        <div class="image-blocks">
+          <div class="block">
+            <img src="images/chainsaw_man.png" alt="Изображение 1" />
+            <p>Человек-бензопила</p>
+          </div>
+          <div class="block">
+            <img src="images/kaguya.png" alt="Изображение 2" />
+            <p>Госпожа Кагуя: В любви как на войне</p>
+          </div>
+          <div class="block">
+            <img src="images/Kimi_no_Na_wa.png" alt="Изображение 3" />
+            <p>Твоё имя</p>
+          </div>
+        </div>
+
+        <div class="anime-section">
+          <div class="anime-list">
+            <h2>Новые аниме на сайте</h2>
+            <div class="anime-post">
+              <img src="images/spyfamily.png" alt="pervaya" />
+              <div class="anime-info">
+                <h3>Название аниме</h3>
+                <p>Очень большое и интересное описание аниме</p>
+              </div>
+            </div>
+            <div class="anime-post">
+              <img src="images/spyfamily.png" alt="pervaya" />
+              <div class="anime-info">
+                <h3>Название аниме</h3>
+                <p>Очень большое и интересное описание аниме</p>
+              </div>
+            </div>
+            <div class="anime-post">
+              <img src="images/spyfamily.png" alt="pervaya" />
+              <div class="anime-info">
+                <h3>Название аниме</h3>
+                <p>Очень большое и интересное описание аниме</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="filter-menu">
+            <label for="genre">Жанр:</label>
+            <select id="genre">
+              <option value="comedy">Комедия</option>
+              <option value="romance">Романтика</option>
+              <option value="isekai">Исекай</option>
+            </select>
+
+            <label for="type">Тип:</label>
+            <select id="type">
+              <option>Все</option>
+            </select>
+
+            <label for="voice">Озвучка:</label>
+            <select id="voice">
+              <option>Все</option>
+            </select>
+
+            <label for="status">Статус:</label>
+            <select id="status">
+              <option>Все</option>
+            </select>
+
+            <label for="age">Возрастное ограничение:</label>
+            <select id="age">
+              <option>Все</option>
+            </select>
+          </aside>
+        </div>
+      </main>
     </div>
-  </header>
-  <div class="content-wrapper">
-    <main>
-      <h1>Погрузись в мир аниме</h1>
-      <p>Смотри любимые сериалы и находи новые шедевры каждый день!</p>
-      <div class="image-blocks">
-        <div class="block">
-            <img src="images/chainsaw_man.png" alt="Изображение 1">
-          <p>Блок 1</p>
-        </div>
-        <div class="block">
-          <img src="images/kaguya.png" alt="Изображение 2">
-          <p>Блок 2</p>
-        </div>
-        <div class="block">
-          <img src="images/Kimi_no_Na_wa.png" alt="Изображение 3">
-          <p>Блок 3</p>
-        </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Вход в аккаунт</h2>
+        <input type="text" placeholder="Логин" />
+        <input type="password" placeholder="Пароль" />
+        <button>Войти</button>
       </div>
-      <div class="anime-list">
-        <h2>Новые аниме на сайте</h2>
-        <div class="anime-post">
-          <img src="images/spyfamily.png" alt="pervaya">
-          <div class="anime-info">
-            <h3>Название аниме</h3>
-            <p>Очень большое и интересное описание анимеОчень большое и интересное описание анимеОчень большое и интересное описание анимеОчень большое и интересное описание анимеОчень большое и интересное описание аниме</p>
-          </div>
-        </div>
-        <div class="anime-post">
-          <img src="images/spyfamily.png" alt="pervaya">
-          <div class="anime-info">
-            <h3>Название аниме</h3>
-            <p>Очень большое и интересное описание аниме</p>
-          </div>
-        </div>
-        <div class="anime-post">
-          <img src="images/spyfamily.png" alt="pervaya">
-          <div class="anime-info">
-            <h3>Название аниме</h3>
-            <p>Очень большое и интересное описание аниме</p>
-          </div>
-        </div>
-      </div>
-      <aside class="filter-menu">
-        <label for="genre">Жанр:</label>
-        <select id="genre">
-          <option value="comedy">Комедия</option>
-          <option value="romance">Романтика</option>
-          <option value="isekai">Исекай</option>
-          <option value="comedy">Комедия</option>
-        </select>
-  
-        <label for="type">Тип:</label>
-        <select id="type">
-          <option>Все</option>
-        </select>
-  
-        <label for="voice">Озвучка:</label>
-        <select id="voice">
-          <option>Все</option>
-        </select>
-  
-        <label for="status">Статус:</label>
-        <select id="status">
-          <option>Все</option>
-        </select>
-  
-        <label for="age">Возрастное ограничение:</label>
-        <select id="age">
-          <option>Все</option>
-        </select>
-      </aside>
-    </main>
-
-
-  </div>
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2>Вход в аккаунт</h2>
-      <input type="text" placeholder="Логин">
-      <input type="password" placeholder="Пароль">
-      <button>Войти</button>
     </div>
   </div>
 
@@ -114,12 +118,12 @@
       document.getElementById("modal").style.display = "none";
     }
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
       const modal = document.getElementById("modal");
       if (event.target === modal) {
         modal.style.display = "none";
       }
-    }
+    };
   </script>
 </body>
 </html>
